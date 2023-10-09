@@ -1,81 +1,82 @@
-*{  margin: 0;
+/*Seba*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*{  box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    font-family: 'Acme', sans-serif;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    /*background-color: #0554b9;*/
+    /* font-size: 20px; */
+}
+/*body{
     background-color: #0554b9;
-}
+}*/
 
-
-/* HEADER Y NAV */
-.logo-header{
-    width: 10%;
-}
-.color_fondo{
-    background-color: #00FFFF;
-}
-
-.horizontal-list {
-    color: #ffff;
-}
-
-.horizontal-list li {
-    margin-right: 10px; /* Espacio entre los elementos */ 
-    margin-left: 20px;
-}
-.horizontal-list li a {
-    text-decoration: none;
-    color:#ffff;
-}
-.horizontal-list li a:hover{
-    text-decoration: none;
-    color:#444443b7;
-}
-
-/* CARRUSEL ARTICLE 1 */
-
-.carrusel1, h2 {
-    text-align: center;
-    margin-top: #0554b9 50px;
-    font-size: 2rem;
-}
-
-.slider-frame {
-    width: 1280px;
-    height: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
-    animation: slide 16s infinite alternate ease-in-out;
-}
-
-.slider-frame ul {
+.header{
+    background-color: #0554b9;
     display: flex;
-    padding: 0;
-    width: 400%;
-}   
+    justify-content: flex-end;
+    align-items: center;
+    height: 110px;
+    /*margin-top: 77px;*/
+    padding: 5px 10%; /*modifique*/
+}
 
-.slider-frame li {
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+.header .logo img{
+    height: 100px; /* modifique*/
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.1); /*modifique*/
+}
+
+.header .nav-links{
     list-style: none;
-    width: 100%;
 }
 
-.slider-frame img {
-    width: 100%;
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
 }
 
-@keyframes slide{
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;};
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;};
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;};
-
-    75%{margin-left: -300%;}
-    95%{margin-left: -300%;};
+.header .nav-links li:hover{
+    transform: scale(1.2);
 }
-/* NICO ------->
+.header .nav-links a{
+    font-size: 17px;
+    color: #dfe3e7;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: #13dadf;
+}
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #181b20;
+    padding: 9px 25px;
+    background: #13dadf;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #dfe3e7;
+    color: #181b20;
+    transform: scale(1.1);
+}
+
+/* Nico */
 
 .centrar {
     display: flex;
@@ -95,19 +96,171 @@
     margin: 1rem auto;
 }
 .planes{
-    background-image: url('../imagenes/foto_planes.jpg');
+    background-image: url('../imagenes/banner_planes.jpg');
     background-size: 100%;
     opacity: 0.95;
-    margin-top: 10px;
-    margin-bottom: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
-.blanco{
-    color: white;
-}
-.alinear-centro{
+.blanco_centro{
+    color: rgb(0, 0, 0);
     text-align: center;
 }
-<-------------/*
+.blanco_centro span{
+    font-size: 20px;
+}
+.carta{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: auto;
+    margin: 10px 40px;
+}
+.carta-cuerpo{
+    max-width: 300px;
+    min-width: 200px;
+    border: solid 2px #0554b9;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #dfe3e7f3;
+}
+.carta-titulo{
+    color: #0554b9;
+    margin-bottom: 10px;
+}
+.carta-texto{
+    color: #0554b9;
+    margin: 10px 0 10px 0;    
+}
+.carta-boton button{
+    background: #0554b9;
+    text-decoration: none;
+    font-size: 16px;
+    color: #00FFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; 
+}
+.carta-boton button:hover{
+    background: #0554b9;
+    text-decoration: none;
+    color: #FFFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;    
+    transform: scale(1.1);
+}
+.lista_beneficios{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.lista_beneficios li{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.lista_beneficios li i{
+    margin: 0px 10px 0 10px;
+    color: #045582;
+}
+.lista_beneficios li span{
+    font-weight: 550;
+    color: #0554b9;
+}
+.banner_quienes_somos{
+    background-image: url("../imagenes/quienes_somos.jpg");
+    opacity: 0.90;    
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    display: flex;   
+    justify-content: center;
+    align-items:center; 
+    padding-bottom: 30px;
+}
+.quienes_somos_titulo{
+    color:#FFFF;
+    font-size: 30px;
+    text-shadow: 2px 2px 0px  #0554b9;
+   
+}
+.nuestra_mision{
+    display: flex;
+    border-color: #000000;
+    justify-content: center;    
+}
+.nuestra_mision_carta{
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem 2rem 2rem 10rem;
+    box-shadow: 0 0 14px  #0554b9;
+    overflow: hidden;
+    margin: 80px 0 60px 0;
+    width: 50%;
+    gap: 20px;
+}
+.imagen_mision{
+    border-radius: 0 10rem 0 0;
+    background-size: cover;
+    background-image: url(../imagenes/banner_planes.jpg);
+    width: 50%;
+    height: 100%;
+
+}
+.texto_mision{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #0554b9;
+    width: 50%;
+    height: 100%;
+}
+.compromiso{
+    padding: auto;
+    margin: 10px 40px;
+}
+.compromiso_titulo{
+    color: #0554b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.compromiso_alinear{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.compromiso-cuerpo{
+    max-width: 300px;
+    min-width: 200px;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.compromiso-cuerpo i{
+    color:#83d3ff;
+    font-size: 6rem;
+}
+.compromiso-titulo{
+    color: #000000;
+    margin-bottom: 10px;
+}
+.compromiso-texto{
+    color: #0554b9;
+    margin: 10px 0 10px 0;
+}
