@@ -18,8 +18,10 @@
     justify-content: flex-end;
     align-items: center;
     height: 110px;
-    /*margin-top: 77px;*/
     padding: 5px 10%; /*modifique*/
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
 
 .header .logo{
@@ -77,6 +79,9 @@
 }
 
 /* Nico */
+main{
+    padding-top: 110px;
+}
 
 .centrar {
     display: flex;
@@ -99,12 +104,12 @@
     background-image: url('../imagenes/banner_planes.jpg');
     background-size: 100%;
     opacity: 0.95;
-    padding-top: 30px;
     padding-bottom: 30px;
 }
 .blanco_centro{
     color: rgb(0, 0, 0);
     text-align: center;
+    padding-top: 30px;
 }
 .blanco_centro span{
     font-size: 20px;
