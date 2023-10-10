@@ -15,12 +15,13 @@
 .header{
     background-color: #0554b9;
     display: flex;
-    justify-content: flex-end;
+    flex-flow: row wrap; /*Agregue*/
+    justify-content: space-between; /*Agregue*/
     align-items: center;
-    height: 110px;
-    padding: 5px 10%; /*modifique*/
+    height: auto;
+    padding: 5px 30px; /*modifique*/
     position: fixed;
-    z-index: 1000;
+    z-index: 1000; 
     width: 100%;
 }
 
@@ -40,10 +41,14 @@
 
 .header .nav-links{
     list-style: none;
+    display: flex; /*Agregue*/
+    flex-flow: row nowrap; /*Agregue*/
+    justify-content: flex-end; /*Agregue*/
+    align-items: center; /*Agregue*/
 }
 
 .header .nav-links li{
-    display: inline-block;
+   /*  display: inline-block; */ /*modifique*/
     padding: 0 20px;
 }
 
@@ -61,7 +66,6 @@
 }
 
 .header .btn button{
-    margin-left: 20px;
     font-weight: 700;
     color: #181b20;
     padding: 9px 25px;
@@ -79,6 +83,47 @@
 }
 
 /* Nico */
+.header .svg{
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+    border: none;
+}
+.header .button{
+    background-color: #0554b9;
+    display: none;
+    border: none;
+}
+
+@media screen and (max-width: 991px) {
+    .header .button{
+        display: block;
+        cursor: pointer;
+    }
+    .header .nav{
+        width: 100%;
+        height: 0;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all .5s ease;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .nav.active{
+        height: 50vh;
+        pointer-events: auto;
+    }
+    .header .nav-links{
+        flex-direction: column;
+    }
+    .header .li{
+        margin: 1rem 0;
+    }
+    
+}
+
 main{
     padding-top: 110px;
 }
