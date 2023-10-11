@@ -1,4 +1,5 @@
 /*Seba*/
+/*Barra Nav  HEADER*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 *{  box-sizing: border-box;
@@ -15,11 +16,14 @@
 .header{
     background-color: #0554b9;
     display: flex;
-    justify-content: flex-end;
+    flex-flow: row wrap; /*Agregue*/
+    justify-content: space-between; /*Agregue*/
     align-items: center;
-    height: 110px;
-    /*margin-top: 77px;*/
-    padding: 5px 10%; /*modifique*/
+    height: auto;
+    padding: 5px 30px; /*modifique*/
+    position: fixed;
+    z-index: 1000; 
+    width: 100%;
 }
 
 .header .logo{
@@ -38,10 +42,14 @@
 
 .header .nav-links{
     list-style: none;
+    display: flex; /*Agregue*/
+    flex-flow: row nowrap; /*Agregue*/
+    justify-content: flex-end; /*Agregue*/
+    align-items: center; /*Agregue*/
 }
 
 .header .nav-links li{
-    display: inline-block;
+   /*  display: inline-block; */ /*modifique*/
     padding: 0 20px;
 }
 
@@ -59,7 +67,6 @@
 }
 
 .header .btn button{
-    margin-left: 20px;
     font-weight: 700;
     color: #181b20;
     padding: 9px 25px;
@@ -76,7 +83,171 @@
     transform: scale(1.1);
 }
 
+/*SECTION BODY DEL INDEX*/
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    
+}
+
+section{
+    margin: 0 auto;
+    max-width: 70rem ;
+    width: 100%;
+}
+
+.intro .grilla{
+    background-image: linear-gradient(to top, #00c6fb 0%, #0554b9 100%);
+    border-radius: 2em;
+    box-shadow: var(#dfe3e7) 2 2 2em;
+    margin-top: 27px;
+    padding: 2em;
+    text-align: center;
+}
+.intro h2{
+    color: #13dadf;
+    text-rendering: initial;
+}
+
+.intro h3{
+    color: #dfe3e7;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.imagenlogo{
+    border-radius: 1em;
+    grid-column-end: span 4;
+}
+
+/*PROMO BIENVENIDA*/
+.promop h3{
+    color: #13dadf;
+    font-size: 40px;
+    text-decoration-style: dashed;
+    text-align: center;
+    margin-top: 20px;
+    animation: mover-izquierda-derecha 3s 1;
+}
+
+@keyframes mover-izquierda-derecha {
+    from{
+        transform: translateX(100px);
+    }
+    to{
+        transform: translateX(10px);
+    }
+}
+
+.promop img {
+    width: 800px;
+    border-radius: 2em;
+    
+}
+.fontaso i {
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 0 48% 0 48%;
+}
+.promop p{
+    color: #dfe3e7;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 20px;
+}
+.promob {
+    grid-column-start: span 3;
+    grid-column-end: span 8;
+}
+
+/*TARJETAS TESTIMONIOS*/
+
+.titulo {
+    grid-column-end: span 8;
+}
+
+.tarjeta {
+    box-shadow: var(#181b20) 0 0 2em;
+    border-radius: 2em;
+    grid-column-end: span 3;
+    padding: 2em;
+    text-align: center;
+}
+
+.tarjeta h4{
+    font-size: 23px;
+    color: #f8fbfd;
+    text-align: left;
+}
+.tarjeta p {
+    color: #181b20;
+    text-align: center;
+}
+.tarjeta img{
+    border-radius: 60%;
+    max-width: 10rem;
+}
+
+.testi{
+    margin-top: 27px;
+    text-align: center;
+    border-radius: 2em;
+    background-image: linear-gradient(to top, #00c6fb 0%, #0554b9 100%);
+}
+
+.testi h3{
+    color: #13dadf;
+    font-size: 33px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------*/
 /* Nico */
+.header .svg{
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+    border: none;
+}
+.header .button{
+    background-color: #0554b9;
+    display: none;
+    border: none;
+}
+
+@media screen and (max-width: 991px) {
+    .header .button{
+        display: block;
+        cursor: pointer;
+    }
+    .header .nav{
+        width: 100%;
+        height: 0;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all .5s ease;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .nav.active{
+        height: 50vh;
+        pointer-events: auto;
+    }
+    .header .nav-links{
+        flex-direction: column;
+    }
+    .header .li{
+        margin: 1rem 0;
+    }
+    
+}
+
+main{
+    padding-top: 110px;
+}
 
 .centrar {
     display: flex;
@@ -99,12 +270,12 @@
     background-image: url('../imagenes/banner_planes.jpg');
     background-size: 100%;
     opacity: 0.95;
-    padding-top: 30px;
     padding-bottom: 30px;
 }
 .blanco_centro{
     color: rgb(0, 0, 0);
     text-align: center;
+    padding-top: 30px;
 }
 .blanco_centro span{
     font-size: 20px;
