@@ -1,4 +1,5 @@
 /*Seba*/
+/*Barra Nav  HEADER*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 *{  box-sizing: border-box;
@@ -82,6 +83,126 @@
     transform: scale(1.1);
 }
 
+/*SECTION BODY DEL INDEX*/
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    
+}
+
+section{
+    margin: 0 auto;
+    max-width: 70rem ;
+    width: 100%;
+}
+
+.intro .grilla{
+    background-image: linear-gradient(to top, #00c6fb 0%, #0554b9 100%);
+    border-radius: 2em;
+    box-shadow: var(#dfe3e7) 2 2 2em;
+    margin-top: 27px;
+    padding: 2em;
+    text-align: center;
+}
+.intro h2{
+    color: #13dadf;
+    text-rendering: initial;
+}
+
+.intro h3{
+    color: #dfe3e7;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.imagenlogo{
+    border-radius: 1em;
+    grid-column-end: span 4;
+}
+
+/*PROMO BIENVENIDA*/
+.promop h3{
+    color: #13dadf;
+    font-size: 40px;
+    text-decoration-style: dashed;
+    text-align: center;
+    margin-top: 20px;
+    animation: mover-izquierda-derecha 3s 1;
+}
+
+@keyframes mover-izquierda-derecha {
+    from{
+        transform: translateX(100px);
+    }
+    to{
+        transform: translateX(10px);
+    }
+}
+
+.promop img {
+    width: 800px;
+    border-radius: 2em;
+    
+}
+.fontaso i {
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 0 48% 0 48%;
+}
+.promop p{
+    color: #dfe3e7;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 20px;
+}
+.promob {
+    grid-column-start: span 3;
+    grid-column-end: span 8;
+}
+
+/*TARJETAS TESTIMONIOS*/
+
+.titulo {
+    grid-column-end: span 8;
+}
+
+.tarjeta {
+    box-shadow: var(#181b20) 0 0 2em;
+    border-radius: 2em;
+    grid-column-end: span 3;
+    padding: 2em;
+    text-align: center;
+}
+
+.tarjeta h4{
+    font-size: 23px;
+    color: #f8fbfd;
+    text-align: left;
+}
+.tarjeta p {
+    color: #181b20;
+    text-align: center;
+}
+.tarjeta img{
+    border-radius: 60%;
+    max-width: 10rem;
+}
+
+.testi{
+    margin-top: 27px;
+    text-align: center;
+    border-radius: 2em;
+    background-image: linear-gradient(to top, #00c6fb 0%, #0554b9 100%);
+}
+
+.testi h3{
+    color: #13dadf;
+    font-size: 33px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------*/
 /* Nico */
 .header .svg{
     width: 2rem;
