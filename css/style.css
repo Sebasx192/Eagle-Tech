@@ -6,12 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
-    /*background-color: #0554b9;*/
-    /* font-size: 20px; */
 }
-/*body{
-    background-color: #0554b9;
-}*/
 
 .header{
     background-color: #0554b9;
@@ -348,22 +343,28 @@ main{
     font-weight: 550;
     color: #0554b9;
 }
+
+/*Comienza CSS de QUIENES SOMOS*/
 .banner_quienes_somos{
-    background-image: url("../imagenes/quienes_somos.jpg");
+    background-image: url("../imagenes/trading.jpg");
     opacity: 0.90;    
     background-size: cover;
-    width: 100%;
-    height: 550px;
+    height: 500px;
     display: flex;   
     justify-content: center;
     align-items:center; 
     padding-bottom: 30px;
-}
+}        
 .quienes_somos_titulo{
     color:#FFFF;
     font-size: 30px;
-    text-shadow: 2px 2px 0px  #0554b9;
-   
+    text-shadow: 2px 2px 0px  #0554b9;   
+}
+.quienes_somos_titulo h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .nuestra_mision{
     display: flex;
@@ -372,21 +373,22 @@ main{
 }
 .nuestra_mision_carta{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     border-radius: 2rem 2rem 2rem 10rem;
     box-shadow: 0 0 14px  #0554b9;
     overflow: hidden;
-    margin: 80px 0 60px 0;
-    width: 50%;
-    gap: 20px;
+    margin: 70px 0 70px 0;
+    width: auto;
+    height: auto;
+    /* gap: 20px; */
 }
 .imagen_mision{
-    border-radius: 0 10rem 0 0;
-    background-size: cover;
-    background-image: url(../imagenes/banner_planes.jpg);
-    width: 50%;
+    min-width: 350px;
+    min-height: 350px;
     height: 100%;
-
+    background-image: url(../imagenes/quienes_somos.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 .texto_mision{
     font-size: 18px;
@@ -395,12 +397,38 @@ main{
     justify-content: center;
     padding: 10px;
     color: #0554b9;
-    width: 50%;
+    width: 300px;
+    min-height: 400px;
     height: 100%;
+    padding-left: 20px;
 }
+@media screen and (max-width: 750px) {
+    .nuestra_mision_carta{
+        display: flex;
+        flex-flow: column nowrap;
+        border-radius: 2rem 2rem 2rem 2rem;
+        box-shadow: 0 0 14px  #0554b9;
+        width: auto;
+        height: auto;
+        align-items: center;
+    }
+    .texto_mision{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        color: #0554b9;
+        width: 300px;
+        min-height: 400px;
+        height: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
 .compromiso{
     padding: auto;
-    margin: 10px 40px;
 }
 .compromiso_titulo{
     color: #0554b9;
@@ -410,9 +438,12 @@ main{
     margin-bottom: 20px;
     font-size: 25px;
 }
+.compromiso_titulo h2{
+    text-align: center;
+}
 .compromiso_alinear{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
 }
 .compromiso-cuerpo{
@@ -489,9 +520,9 @@ input , textarea {
 }
 
 @media(max-width:540px) {
-    body {
+   /*  body {
         padding: 30px;
-    }
+    } */
 
     form {
         width: 100%;
