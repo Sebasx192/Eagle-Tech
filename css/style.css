@@ -255,32 +255,55 @@ main{
     margin-left: 20px;
 }
 .linea{
-    color: #ffff;
+    color: #022552;
     display: block;
     height: 1px;
     width: 35%;
     margin: 1rem auto;
 }
-.planes{
-    background-image: url('../imagenes/banner_planes.jpg');
-    background-size: 100%;
-    opacity: 0.95;
+.planes{   
     padding-bottom: 30px;
 }
+.encabezado{
+    background-image: url('../imagenes/playa.jpg');
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+}
+.encabezado-opaco{
+    background-color:#ffffffa8;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
 .blanco_centro{
-    color: rgb(0, 0, 0);
     text-align: center;
     padding-top: 30px;
+    /* background-color: #ffffff36; */
+}
+.blanco_centro h2{
+    color:  #0554b9;
+    font-weight:bold;
+    font-size: 2rem;
+}
+.blanco_centro p{
+    color:  #0554b9;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 .blanco_centro span{
-    font-size: 20px;
+    color:  #0554b9;
+    font-weight:bold;
+    font-size: 1.5rem;
 }
 .carta{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: auto;
-    margin: 10px 40px;
+    margin: 40px 40px;
 }
 .carta-cuerpo{
     max-width: 300px;
@@ -291,6 +314,7 @@ main{
     margin: 10px;
     text-align: center;
     background-color: #dfe3e7f3;
+    box-shadow: 0 0 14px #0554b9;
 }
 .carta-titulo{
     color: #0554b9;
@@ -356,9 +380,9 @@ main{
     padding-bottom: 30px;
 }        
 .quienes_somos_titulo{
-    color:#FFFF;
+    color:#0554b9;
     font-size: 30px;
-    text-shadow: 2px 2px 0px  #0554b9;   
+    text-shadow: 4px -4px 2px  #ffff;   
 }
 .quienes_somos_titulo h2{
     display: flex;
