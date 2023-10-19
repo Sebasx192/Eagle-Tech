@@ -538,3 +538,18 @@ input , textarea {
      justify-content: center; 
      background-color: #6773aa; 
  }
+
+
+ /* Donde estamos */
+
+ .mapa {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+ }
+
+ .asideContac {  
+    display: flex;  
+    flex-flow: row nowrap;
+    justify-content: space-between;
+ }
