@@ -9,7 +9,7 @@
     /*background-color: #0554b9;*/
     /* font-size: 20px; */
 }
-body{
+.body{
     background-image: linear-gradient(to top, #00c6fb 0%, #0554b9 100%); 
     background-blend-mode: multiply;
 }
