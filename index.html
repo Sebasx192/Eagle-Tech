@@ -5,9 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="imagenes/Eagle-Techazul.ico" type="image/x-icon">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/app.css"><!--Se  agrego esta extencion para hacer el carrusel-->
+        <script defer src="./Javascrip/app.js"></script><!--Se  agrego esta extencion para hacer el carrusel-->
         <title>Seguros Eagle-Tech</title>
     </head>
-    <body>
+    <body class="body">
         <header class="header">
             <div class="logo">
                 <img src="./imagenes/2Eagle-Tech transparente.png" alt="Logo de la marca">
@@ -45,12 +47,21 @@
                 <i class="fa-solid fa-ruler fa-beat" style="color: #13dadf;"></i>
                     <p>Protegemos tus dispositivos con planes diseñados especialmente para vos.</p>
                 <h3>Nuestros Valores</h3>
+                <i class="fa-regular fa-heart fa-beat" style="color: #13dadf;"></i>
                     <p>Transparencia, Integridad y Compromiso con Nuestros Clientes.</p>
-                <div class="grilla">
-                    <img class="promob" src="./imagenes/Clientes promo.png" alt="promo">
+            </div>
+        </section> 
+    <!--CARRUSEL-->
+            <div class="carrousel">
+                <div class="grande">
+                    <img src="./imagenes/Clientes promo.png" alt="promo" class="img">
+                    <img src="./imagenes/Clientes promo.png" alt="promo" class="img">
                 </div>
-            </div>    
-        </section>
+                <ul class="puntos">
+                    <li class="punto activo"></li>
+                    <li class="punto"></li>
+                </ul>
+            </div>
     <!--Testimonios-->
         <section class="testi">
             <h3>Testimonios de la gente</h3>
@@ -78,22 +89,42 @@
             </div>
         </section>
 <!--PIE DE PAGINA, footer-->
-        <footer class="color_fondo">
-            <div class="container">
-                <nav>
-                    <ul class="horizontal-list">
-                        <li><a href="#quienesSomos">Quienes Somos</a></li>
-                        <li><a href="#nuestrosPlanes">Nuestros Planes</a></li>
-                        <li><a href="#contactos">Donde Estamos</a></li>
-                    </ul>
-                </nav>
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#"></a>
+                            <img src="./imagenes/2Eagle-Tech transparente.png" alt="Logo Eagle-Tech">
+                    </figure>
+                </div>
+                <div class="cards">
+                    <h2>MEDIOS DE PAGO</h2>
+                        <div class="tarjetas">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                            <p>Descubre nuestra historia y nuestra pasión por la tecnología.</p>
+                            <p>Transparencia, Integridad y Compromiso con Nuestros Clientes.</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                        <div class="red-social">
+                            <a href="https://www.facebook.com/?locale=es_LA" class="fa fa-facebook"></a>
+                            <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                            <a href="https://twitter.com/?lang=es" class="fa fa-twitter"></a>
+                            <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                        </div>
+                </div>
             </div>
-            <div class="social-icons">
-                Enlaces de las redes
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>Eagle-Tech Protección Tecnológica</b> - Todos los Derechos Reservados.</small>
             </div>
-            <p>© 2023 Eagle-Tech Protección Tecnológica. Todos los derechos reservados.</p>
         </footer>
-        <!--Enlaces de las redes-->
         <script src="https://kit.fontawesome.com/7459002549.js" crossorigin="anonymous"></script>
         <script src="../Javascrip/nav-bar-resposive.js"></script>
     </main>
