@@ -565,15 +565,55 @@ input , textarea {
 
 
  /* Donde estamos */
+.donde-estamos-fondo{
+    /* background-image: linear-gradient(to top, #0554b9 0%, #fbc2eb 100%); */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
 
- .mapa {
+.mapa {
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    align-items: center;
  }
-
- .asideContac {  
+ .mapa h1{
+    margin: 50px 0;
+    color: #0554b9;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.asideContac {  
     display: flex;  
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 100px;
+    
  }
+ .asideContac iframe{
+    max-width: 450px;
+    max-height: 450px;
+ }
+ .asideContac aside{
+    display: flex;
+    align-items: center;
+ }
+ .donde-estamos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+.donde-estamos li{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.donde-estamos li i{
+    margin: 0px 10px 0 10px;
+    color: #045582;
+}
+.donde-estamos li span{
+    font-weight: 550;
+    color: #0554b9;
+}
