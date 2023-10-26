@@ -16,11 +16,11 @@
 .header{
     background-color: #0554b9;
     display: flex;
-    flex-flow: row wrap; /*Agregue*/
-    justify-content: space-between; /*Agregue*/
+    flex-flow: row wrap; 
+    justify-content: space-between; 
     align-items: center;
     height: auto;
-    padding: 5px 30px; /*modifique*/
+    padding: 5px 30px; 
     position: fixed;
     z-index: 1000; 
     width: 100%;
@@ -31,25 +31,24 @@
     margin-right: auto;
 }
 .header .logo img{
-    height: 100px; /* modifique*/
+    height: 100px; 
     width: auto;
     transition: all 0.3s;
 }
 
 .header .logo img:hover{
-    transform: scale(1.1); /*modifique*/
+    transform: scale(1.1); 
 }
 
 .header .nav-links{
     list-style: none;
-    display: flex; /*Agregue*/
-    flex-flow: row nowrap; /*Agregue*/
-    justify-content: flex-end; /*Agregue*/
-    align-items: center; /*Agregue*/
+    display: flex; 
+    flex-flow: row nowrap; 
+    justify-content: flex-end;
+    align-items: center; 
 }
 
 .header .nav-links li{
-   /*  display: inline-block; */ /*modifique*/
     padding: 0 20px;
 }
 
@@ -89,6 +88,8 @@
     grid-template-columns: repeat(12, 1fr);
     
 }
+
+
 
 section{
     margin: 0 auto;
@@ -151,16 +152,17 @@ section{
     padding: 0;
     margin-top: 50px;
     width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
+    overflow: hidden;
+    animation: slide 16s infinite alternate ease-in-out;
 }
 
 .slider-frame li{
     list-style: none;
-    width: 80%;
+    width: 100%;
 }
 
 .slider-frame img{
-    width: 80% ;
+    width: 100% ;
 }
 
 @keyframes slide{
@@ -168,13 +170,17 @@ section{
     20% {margin-left: 0%;}
 
     25% {margin-left: -100%;}
-    45% {margin-left: -200%;}
+    45% {margin-left: -100%;}
 
     50% {margin-left: -200%;}
     70% {margin-left: -200%;}
 
     75% {margin-left: -300%;}
     95% {margin-left: -300%;}
+}
+
+.slider-frame{
+    margin-left: 300px;
 }
 
 .fontaso i {
@@ -194,6 +200,11 @@ section{
 }
 
 /*TARJETAS TESTIMONIOS*/
+.grillas {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    
+}
 
 .titulo {
     grid-column-end: span 8;
@@ -202,12 +213,15 @@ section{
 .testi{
     margin-top: 30px;
 }
+
 .tarjeta {
     box-shadow: var(#181b20) 0 0 2em;
     border-radius: 2em;
     grid-column-end: span 3;
     padding: 2em;
     text-align: center;
+    
+
 }
 
 .tarjeta h4{
@@ -216,8 +230,8 @@ section{
     text-align: center;
 }
 .tarjeta p {
-    color: #181b20;
-    text-align: justify;
+    color: #dfe3e7;
+    text-align: center;
     font-size: 15px;
 }
 .tarjeta img{
@@ -315,37 +329,38 @@ section{
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
-@media screen and (max-width:800px){
+
+@media screen and (min-width: 1025px){
+    
+    
+}
+
+@media screen and (max-width: 780px){
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
-        }
+    }
+    .imagenlogo {
+        margin: auto;
+        width: 90%;
+    }
+    .slider-frame {
+        margin: auto;
+        width: 90%;
+    }
+    
+    .grillas{
+        display: block;
+    }
+    .imagenlogo{
+        display: none;
+    }
 }
 
-@media screen and (min-width: 780px) {
-    .imagenlogo {
-    margin: auto;
-    width: 90%;
-    } }
 
 
-    @media screen and (min-width: 780px) {
-        .slider-frame {
-        margin: auto;
-        width: 90%;
-        } }
-    
-    @media screen and (min-width: 360px) {
-        .slider-frame {
-        margin: auto;
-        width: 90%;
-        }
-        .tarjeta{
-            display: nowrap;
-        }
-        }
 /*--------------------------------------------------------------*/
 /* Nico */
 .header .svg{
