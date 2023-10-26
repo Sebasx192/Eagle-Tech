@@ -35,7 +35,9 @@
     width: auto;
     transition: all 0.3s;
 }
-
+.regla{
+    max-width: 50px;
+}
 .header .logo img:hover{
     transform: scale(1.1); 
 }
@@ -149,6 +151,7 @@ section{
 
 .slider-frame ul {
     display: flex;
+    text-align: center;
     padding: 0;
     margin-top: 50px;
     width: 400%;
@@ -179,9 +182,9 @@ section{
     95% {margin-left: -300%;}
 }
 
-.slider-frame{
+/*.slider-frame{
     margin-left: 300px;
-}
+}*/
 
 .fontaso i {
     font-size: 50px;
@@ -533,6 +536,9 @@ main{
 }
 
 /*Comienza CSS de QUIENES SOMOS*/
+body{
+    background-color: #dfe3e7;
+}
 .banner_quienes_somos{
     background-image: url("../imagenes/trading.jpg");
     opacity: 0.90;    
