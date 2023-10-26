@@ -139,11 +139,43 @@ section{
     }
 }
 
-/*.promop img {
-    width: 800px;
-    border-radius: 2em; 
+.slider-frame{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
     margin-top: 50px;
-}*/
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 80%;
+}
+
+.slider-frame img{
+    width: 80% ;
+}
+
+@keyframes slide{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -200%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
 
 .fontaso i {
     font-size: 50px;
@@ -184,8 +216,8 @@ section{
     text-align: center;
 }
 .tarjeta p {
-    color: #181b20;
-    text-align: justify;
+    color: #dfe3e7;
+    text-align: left;
     font-size: 15px;
 }
 .tarjeta img{
@@ -203,6 +235,7 @@ section{
 /*-------FOOTER------*/
 .pie-pagina{
     width: 100%;
+    background-color: #00c6fb;
 }
 
 .pie-pagina .grupo-1{
@@ -290,6 +323,29 @@ section{
         padding: 35px 0px;
         }
 }
+
+@media screen and (min-width: 780px) {
+    .imagenlogo {
+    margin: auto;
+    width: 90%;
+    } }
+
+
+    @media screen and (min-width: 780px) {
+        .slider-frame {
+        margin: auto;
+        width: 90%;
+        } }
+    
+    @media screen and (min-width: 360px) {
+        .slider-frame {
+        margin: auto;
+        width: 90%;
+        }
+        .tarjeta{
+            display: nowrap;
+        }
+        }
 /*--------------------------------------------------------------*/
 /* Nico */
 .header .svg{
@@ -593,12 +649,13 @@ form {
     border-radius: 20px;
     text-align: center;
     width: 500px;
-    background-color: #737fb2;
+    background-color: #0554b9;
 }
 
 form h2 {
-    color: #14f9a6;
-    font-size: 25px;
+    color: #13dadf;
+    font-size: 33px;
+    margin-bottom: 20px;
 }
 
 .datos {
@@ -607,33 +664,33 @@ form h2 {
 }
 
 input , textarea {
-    background-color: #818ec6;
+    background-color: #dfe3e7;
     padding: 20px 14px;
     margin-bottom: 25px;
     border: 0;
     border-radius: 10px;
     font-size: 15px;
-    color: #ffffff;
+    color: #181b20;
 }
 
 ::placeholder {
-    color: #8fc9f3;
+    color: #0554b9;
     font-size: 15px;
 }
 
 :focus {
-    outline: 1px solid #14f9a6;
+    outline: 1px solid  #13dadf;
 }
 
 .btn-enviar {
-    background-color: #14f9a6;
-    color: #146d31;
+    background-color:  #13dadf;
+    color: #0554b9;
     font-size: 17px;
     cursor: pointer;
 }
 
 .btn-enviar:hover {
-    background-color: #14ea9b;
+    background-color: #dfe3e7;
 }
 
 @media(max-width:540px) {
@@ -647,14 +704,14 @@ input , textarea {
 }
 
 .align-form { 
-    background-image: url('../imagenes/trabajar-al-aire-libre.jpg');
+    /*background-image: url('../imagenes/trabajar-al-aire-libre.jpg');
      /* font-family: Arial, Helvetica, sans-serif; */
-     min-height: 100vh;
-     display: flex; 
-     align-items: center; 
-     justify-content: center; 
-     background-color: #6773aa; 
- }
+    min-height: 100vh;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-image: linear-gradient(to top, #00c6fb 0%, #0554b9 100%)
+}
 
 
  /* Donde estamos */
