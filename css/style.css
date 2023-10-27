@@ -182,14 +182,14 @@ section{
     95% {margin-left: -300%;}
 }
 
-/*.slider-frame{
-    margin-left: 300px;
-}*/
-
+.fontaso {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 .fontaso i {
     font-size: 50px;
     margin-top: 20px;
-    padding: 0 48% 0 48%;
 }
 .promop p{
     color: #dfe3e7;
@@ -335,7 +335,9 @@ section{
 }
 
 @media screen and (min-width: 1025px){
-    
+    .slider-frame {
+        width: 50%;
+    }
     
 }
 
@@ -355,13 +357,24 @@ section{
         width: 90%;
     }
     
+    .grilla{
+        display: flex;
+        flex-flow: wrap-reverse;
+    }
+    .grilla .titulo h2 h3{
+        text-align: center;
+    }
+
+    .grilla .titulo {
+        margin-top: 20px;
+    }
+
     .grillas{
         display: block;
     }
-    .imagenlogo{
-        display: none;
+    
     }
-}
+
 
 
 
@@ -716,18 +729,12 @@ input , textarea {
 }
 
 @media(max-width:540px) {
-   /*  body {
-        padding: 30px;
-    } */
-
     form {
         width: 100%;
     }
 }
 
 .align-form { 
-    /*background-image: url('../imagenes/trabajar-al-aire-libre.jpg');
-     /* font-family: Arial, Helvetica, sans-serif; */
     min-height: 100vh;
     display: flex; 
     align-items: center; 
@@ -738,7 +745,6 @@ input , textarea {
 
  /* Donde estamos */
 .donde-estamos-fondo{
-    /* background-image: linear-gradient(to top, #0554b9 0%, #fbc2eb 100%); */
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
@@ -746,8 +752,8 @@ input , textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
- }
- .mapa h1{
+}
+.mapa h1{
     margin: 50px 0;
     color: #0554b9;
     font-weight: bold;
@@ -757,18 +763,18 @@ input , textarea {
     display: flex;  
     flex-flow: row wrap;
     justify-content: center;
-    gap: 100px;
-    
- }
- .asideContac iframe{
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.asideContac iframe{
     max-width: 450px;
     max-height: 450px;
- }
- .asideContac aside{
+}
+.asideContac aside{
     display: flex;
     align-items: center;
- }
- .donde-estamos{
+}
+.donde-estamos{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -788,4 +794,14 @@ input , textarea {
 .donde-estamos li span{
     font-weight: 550;
     color: #0554b9;
+}
+.asideContac iframe{
+    width: 500px; 
+    height: 375px;
+}
+@media screen and (max-width: 780px){
+    .asideContac iframe{
+        width: 350px;
+        height: 263px;
+    }
 }
