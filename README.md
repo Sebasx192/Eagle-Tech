@@ -7,11 +7,11 @@ El conjunto de páginas que conforman Eagle-Tech consisten en 5 páginas distint
 
 La página principal consiste en una breve presentación de la empresa, los objetivos y valores, seguido de un carrusel de imágenes con distintas promociones y ofertas. Debajo se encuentran testimonios de personas que han contratado previamente el servicio y por último se ubica el footer con información, redes sociales, etc.
 
-*Quienes Somos:
+**Quienes Somos:
 
 Esta sección incluye varias imágenes y una información más detallada sobre la empresa, su filosofía y compromiso.
 
-*Nuestros Planes:
+**Nuestros Planes:
 
 Aquí se encuentra la sección en la que se presentan las distintas coberturas que brinda la empresa. Cuenta con bloques de los distintos planes que ofrecemos, con una breve descripción de cada uno. 
 
