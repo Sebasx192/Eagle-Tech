@@ -21,7 +21,7 @@ Esta página está caracterizada por incluir un iframe para la disposición en l
 
 # Contáctanos:
 
-Por último, aquí se encuentra el formulario de contacto que tiene la empresa, este cuenta con 4 campos obligatorios para su envío, estos son: Nombre, un teléfono válido, un correo válido y un mensaje con la descripción de la consulta. Todos los campos están validados, por lo que se deben completar con ciertos parámetros en cada casilla, la validación se realizó utilizando JS. Para el envío del formulario se utilizó una API externa https://formspree.io que envía todas las consultas al correo de la empresa y luego de completa el formulario y enviarlo muestra una página de agradecimiento de formspree con un botón para volver a la sección de Contáctanos de Eagle-Tech.
+Por último, aquí se encuentra el formulario de contacto que tiene la empresa, este cuenta con 4 campos obligatorios para su envío, estos son: Nombre, un teléfono válido, un correo válido y un mensaje con la descripción de la consulta. Todos los campos están validados, por lo que se deben completar con ciertos parámetros en cada casilla, la validación se realizó utilizando JS. Para el envío del formulario se utilizó una API externa https://formspree.io que envía todas las consultas al correo de la empresa (eagletechcac@gmail.com) y luego de completa el formulario y enviarlo muestra una página de agradecimiento de formspree con un botón para volver a la sección de Contáctanos de Eagle-Tech.
 
 # Funciones principales:
 
