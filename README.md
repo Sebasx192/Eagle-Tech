@@ -1,4 +1,4 @@
-# Eagle-Tech Seguros
+# Eagle-Tech Seguros 
 # Estructura general:
 
 El conjunto de páginas que conforman Eagle-Tech consisten en 5 páginas distintas navegables y diferenciadas una de otro, estas secciones son: página principal (Eagle-Tech), Quienes Somos, Nuestros Planes, Donde Estamos y Contáctanos( Formulario). La navegación puede realizarse verticalmente para ver información sobre cada sección, y a través de clics se cambia de una sección a otra con la barra superior de la página.
@@ -37,3 +37,4 @@ En la parte superior se puede apreciar una sección con el logo y las distintas 
 Se utilizaron apis de:
 •	https://formspree.io Para el envío del formulario de contacto.
 •	https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css y https://kit.fontawesome.com/7459002549.js Para iconos que se utilizan en las páginas de Eagle-Tech
+Probar [Aquí](https://eagle-tech.netlify.app/)
